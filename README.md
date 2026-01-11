@@ -13,7 +13,7 @@
 
 > 目前只编译上传了Win64版本，其他平台的支持只需要修改`Plugins/ControlFlowsBlueprint/ControlFlowsBlueprint.uplugin`中的`PlatformAllowList`和`SupportedTargetPlatforms`即可。
 
-> 使用过程遇到任何问题可以直接在`Github`联系我，或者在`https://www.bonan.online/Support`留言。
+> 使用过程遇到任何问题可以直接在`Github`联系我，或者在`https://www.bonan.online/ControlFlowsBlueprintSupport`留言。
 ---
 
 # ControlFlowsBlueprintExampleActor 测试文档
