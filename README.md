@@ -1,3 +1,16 @@
+<!-- Keep these links. Translations will automatically update with the README. -->
+[Deutsch](https://zdoc.app/de/UEProjectShare/TestCFB) | 
+[English](https://zdoc.app/en/UEProjectShare/TestCFB) | 
+[Español](https://zdoc.app/es/UEProjectShare/TestCFB) | 
+[français](https://zdoc.app/fr/UEProjectShare/TestCFB) | 
+[日本語](https://zdoc.app/ja/UEProjectShare/TestCFB) | 
+[한국어](https://zdoc.app/ko/UEProjectShare/TestCFB) | 
+[Português](https://zdoc.app/pt/UEProjectShare/TestCFB) | 
+[Русский](https://zdoc.app/ru/UEProjectShare/TestCFB) | 
+[中文](https://zdoc.app/zh/UEProjectShare/TestCFB)
+
+---
+
 # ControlFlowsBlueprintExampleActor 测试文档
 
 ## 概述
