@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{09DBFD25-4952-7C1B-22AB-DE878162E7D7}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "TestCFB",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ControlFlowsBlueprint",
+			"Enabled": true
+		},
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
