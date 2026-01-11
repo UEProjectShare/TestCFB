@@ -13,7 +13,10 @@
 	"Plugins": [
 		{
 			"Name": "ControlFlowsBlueprint",
-			"Enabled": true
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64"
+			]
 		},
 		{
 			"Name": "ModelingToolsEditorMode",
@@ -21,6 +24,10 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "BlueprintScreenshotTool",
+			"Enabled": true
 		}
 	]
 }

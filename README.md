@@ -11,6 +11,11 @@
 
 ---
 
+> 目前只编译上传了Win64版本，其他平台的支持只需要修改`Plugins/ControlFlowsBlueprint/ControlFlowsBlueprint.uplugin`中的`PlatformAllowList`和`SupportedTargetPlatforms`即可。
+
+> 使用过程遇到任何问题可以直接在`Github`联系我，或者在`https://www.bonan.online/Support`留言。
+---
+
 # ControlFlowsBlueprintExampleActor 测试文档
 
 ## 概述
@@ -52,6 +57,8 @@ CurrentControlFlow
     ->QueueStep(TEXT("Step 3"), Step3);
 ```
 
+![](Images/SimpleSequence.png)
+
 按顺序执行 Step1 → Step2 → Step3。
 
 ### 2. AsyncWait - 异步等待
@@ -62,6 +69,8 @@ CurrentControlFlow
     ->QueueWait(TEXT("Async Operation"), AsyncWait)
     ->QueueStep(TEXT("Cleanup"), Cleanup);
 ```
+
+![](Images/AsyncWait.png)
 
 执行流程：
 1. 执行 Prepare 步骤
@@ -77,6 +86,8 @@ CurrentControlFlow
     ->QueueBranch(TEXT("Decision Point"), Decide)
     ->QueueStep(TEXT("Finalize"), Finalize);
 ```
+
+![](Images/Branch.png)
 
 在 `ExampleBranchSelector` 中动态添加分支：
 - Branch 0: "Branch A"
@@ -94,6 +105,8 @@ CurrentControlFlow
     ->QueueStep(TEXT("Merge Results"), Merge);
 ```
 
+![](Images/Concurrent.png)
+
 在 `SetupConcurrentExample` 中添加并发任务：
 - Task A
 - Task B
@@ -110,6 +123,8 @@ CurrentControlFlow
     ->QueueStep(TEXT("Loop Cleanup"), Cleanup);
 ```
 
+![](Images/Loop.png)
+
 在 `ExampleLoopCondition` 中：
 - 检查 `CurrentLoopIteration >= ExampleLoopCount` 决定是否继续
 - 每次迭代执行 "Loop Work" 步骤和 0.5 秒延迟
@@ -124,6 +139,8 @@ CurrentControlFlow
     ->QueueSubFlow(TEXT("LoadResources"), LoadResources)
     ->QueueStep(TEXT("Finalize"), Finalize);
 ```
+
+![](Images/SubFlow.png)
 
 子流程 InitializeSubsystems 包含：
 - InitAudio → InitNetwork → InitUI → SubsystemWarmup (0.5s delay)
@@ -141,6 +158,8 @@ CurrentControlFlow
     ->QueueConcurrent(TEXT("Parallel Loading"), Parallel)
     ->QueueStep(TEXT("Finalize System"), Finalize);
 ```
+
+![](Images/Complex.png)
 
 组合使用多种控制流类型。
 
