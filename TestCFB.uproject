@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{09DBFD25-4952-7C1B-22AB-DE878162E7D7}",
+	"EngineAssociation": "5.7",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -11,6 +11,10 @@
 		}
 	],
 	"Plugins": [
+		{
+			"Name": "ControlFlows",
+			"Enabled": true
+		},
 		{
 			"Name": "ControlFlowsBlueprint",
 			"Enabled": true,
@@ -24,10 +28,6 @@
 			"TargetAllowList": [
 				"Editor"
 			]
-		},
-		{
-			"Name": "BlueprintScreenshotTool",
-			"Enabled": true
 		}
 	]
 }
